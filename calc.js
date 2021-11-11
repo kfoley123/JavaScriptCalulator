@@ -31,7 +31,7 @@ seven.addEventListener("click", addValue);
 eight.addEventListener("click", addValue);
 nine.addEventListener("click", addValue);
 zero.addEventListener("click", addValue);
-equals.addEventListener("click", addValue);
+equals.addEventListener("click", doMath);
 
 clear.addEventListener("click", clearBox);
 
@@ -45,3 +45,24 @@ function clearBox() {
     input.value = "";
 
 }
+
+function doMath(){
+    var splitString;
+    if(input.value.includes("+")){
+        splitString = input.value.split("+");
+        input.value = parseInt(splitString[0]) + parseInt(splitString[1]);
+    }
+    else if(input.value.includes("-")){
+        splitString = input.value.split("-");
+        input.value = parseInt(splitString[0]) - parseInt(splitString[1]);
+    }
+    else if(input.value.includes("X")){
+        splitString = input.value.split("X");
+        input.value = parseInt(splitString[0]) * parseInt(splitString[1]);
+    }
+    else if(input.value.includes("/")){
+        splitString = input.value.split("/");
+        input.value = parseInt(splitString[0]) / parseInt(splitString[1]);
+    }
+}   
+
