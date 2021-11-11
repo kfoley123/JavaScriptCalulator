@@ -49,9 +49,12 @@ function clearBox() {
 function doMath(){
     var splitString;
     if(input.value.includes("+")){
+        //takes what you put in the box and splits it into an array, on either side of the + 
         splitString = input.value.split("+");
+        //splitString is the array that split creates
         input.value = parseInt(splitString[0]) + parseInt(splitString[1]);
     }
+    
     else if(input.value.includes("-")){
         splitString = input.value.split("-");
         input.value = parseInt(splitString[0]) - parseInt(splitString[1]);
