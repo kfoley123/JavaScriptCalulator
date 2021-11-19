@@ -1,0 +1,40 @@
+button { 
+    background-color: #e16389;
+    font-family: "Monaco", monospace;
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 18px;
+    opacity:0.9 ;
+}
+
+#clear {
+    background-color: #e163c8;
+    
+}
+
+.side-button {
+    background-color:#fbd8b7;
+
+}
+
+#equals {
+    background-color: #63e1bb;
+}
+
+#input {
+   background-color: #f3c0cf ; 
+   width: 240px;
+   height: 60px;
+   margin: 10px 20px 10px 20px;
+   font-size: 30px;
+   opacity:0.9;
+}
+
+body {
+    background-image: url("hellokittybackground.jpeg") ;
+    background-repeat:no-repeat;
+    background-size: 300px 400px;
+    
+}
